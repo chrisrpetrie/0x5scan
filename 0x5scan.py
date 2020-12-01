@@ -1,3 +1,4 @@
+#Simple script to port scan a host
 from socket import *
 import time
 startTime = time.time()
@@ -14,4 +15,5 @@ if __name__ == '__main__':
 		if(conn == 0) :
 			print ('Port %d: OPEN' % (i,))
 		s.close()
+		
 print('Time taken: ', time.time() - startTime)
